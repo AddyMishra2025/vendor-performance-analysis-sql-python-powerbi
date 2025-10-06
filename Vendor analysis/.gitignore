@@ -33,13 +33,18 @@ venv.bak/
 # Jupyter Notebook
 .ipynb_checkpoints
 
-# SQLite databases
+# SQLite databases - exclude large database files
+*.db
 *.db-shm
 *.db-wal
 
 # Power BI
 *.pbix.tmp
 *.pbix~
+
+# Large CSV files - exclude files over GitHub's 100MB limit
+data/purchases.csv
+data/sales.csv
 
 # macOS
 .DS_Store
@@ -70,12 +75,8 @@ Temporary Items
 .idea/
 
 # Logs
+logs/
 *.log
-
-# Large data files - exclude files over GitHub's 100MB limit
-*.csv
-data/*.csv
-*.db
 
 # Temporary files
 *.tmp
