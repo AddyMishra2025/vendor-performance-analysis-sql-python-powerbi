@@ -72,9 +72,10 @@ Temporary Items
 # Logs
 *.log
 
-# Large data files (optional - uncomment if you don't want to track large CSV files)
-# *.csv
-# data/*.csv
+# Large data files - exclude files over GitHub's 100MB limit
+*.csv
+data/*.csv
+*.db
 
 # Temporary files
 *.tmp
